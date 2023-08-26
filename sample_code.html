@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brandzz Landing Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .company-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .product-photo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+  .buy-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="company-name">brandzz</div>
+    <div class="hamburger-menu">&#9776;</div>
+  </div>
+  <img class="product-photo" src="product.jpg" alt="Product Photo">
+  <a class="buy-button" href="#">Buy Now</a>
+</body>
+</html>
