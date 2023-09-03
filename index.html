@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Project1</title>
+</head>
+<body>
+    <nav id="nav_bar">
+        <h2 id="instrument">Project1.</h2>
+        <!-- <section id="nav_buttons"> -->
+            <ul class="nav-menu" id="nav_buttons">
+                <li class="nav-item"><a href="">WHAT WE DO</a></li>
+                <li class="nav-item"><a href="">WHO WE ARE</a></li>
+                <li class="nav-item"><a href="">BEING HERE</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        <!-- </section> -->
+    </nav>
+
+    <br><br><br><br>
+
+    <section id="main">
+        <h1 id="head">Exclusive. Customized. Premium.</h1>
+            <!-- <section id="circle">
+                <svg width="519" height="348" viewBox="0 0 519 348" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="519" height="348" fill=""/>
+                    <path d="M263.254 224.503C246.683 222.136 229.382 216.48 214.081 209.705C196.966 202.127 178.21 193.429 165.14 179.647C153.173 167.027 142.074 150.736 141.402 132.748C140.582 110.827 161.991 94.2771 179.514 85.1556C207.641 70.5143 240.005 62.547 271.346 58.8738C306.13 54.7971 344.607 52.3176 378.632 62.1879C400.872 68.6396 424.165 83.2276 433.7 105.233C441.817 123.964 438.914 146.427 422.949 160.07C403.151 176.988 375.365 182.363 350.192 184.271C315.499 186.901 280.509 186.101 246.105 180.764C215.7 176.049 185.569 167.449 158.126 153.365C138.469 143.276 117.835 127.211 112.499 104.655C108.21 86.5216 126.857 75.8507 141.556 70.8201C165.067 62.7736 191.93 64.2689 216.432 64.2689C243.373 64.2689 270.434 66.051 297.243 68.7391C324.719 71.4942 350.826 80.5805 378.401 82.3039" stroke="#F96614" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </section> -->
+        <!-- <p id="intro">
+            We are investing $3 million over the next three years in our <br>
+            Build|Grow|Serve program, created to support and empower Black and <br>
+            underrepresented communities.
+        </p> -->
+        <button class = "buy" id="LearnMore">
+            Get Yours Now <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAtZJREFUaEPFWAlywzAIRD/Lz+y8LP2ZW0W2LhCskNN4OpnGQcDuIpAdqLkCER1Uf7a/x2+BKBzxL1smm7Tqrgv1Fu1cFxoAc+73Ful8M4qT5w/GwLhdlYWmAr4YvlWYWqzoOwXcsfWd40kOWSMqMMLA73d36q9uIpS0hXBpD+AbQGxKK8sRljUbXIFFnKuJjtYrCvCazhhWwKysFVCYXegTQ8qnhowcBKAI2M3jgeWDiH6u38Rm0M2iWm1tTC0C6NKVZ+JORBsRPYko/l8upZyQSos2DgCI65zjlfx1g4NQ68nuyw4AcAU/AtFLON4JIKZIYSJiGflidApkJ5NKjFP8pAJX1L6MrtHJQHg4MgGYTrHDbAOi8jlUQuxUwsjnAMyMsYoTrBII7n+pnDoAevY3YGPldAKtQHRRxKDlpllCbr7HCwUQ74QKiAmmFAC4F7tbMzQ7UdiEU/BUOUGDDIehn7SFTbkTHZtw/0l0tBNbGd5Te+D0c9+rh5xYgiF2J4NBzwPNG4CpTN1es7G5qpbxSRSiSsLxqQBOCswFGCswlZ/Jgr4fzlgOBUaHW1YG9sFzDLhJXuPlG230ErxtpyVLlfm+4zkU0KUHqwgYaMYEKiV046jCsoeSx1wNHmjMxY7JddIEJT9DaS4hM2nEq+7kluT7EOImvgVMu1X2QLRhT2eJKWFCiy+h+SbuVk6BkY0r5huDqXOPVADR2+1ttMPAHynTGMGTNxg0AUwp0NIU3wW9BOb+96F+AUDMffG1it05FAVGqeM99LQcv9gyj0OjDV2AmSVkc3B1DBWw8WoRiSLb+ACMOtVivdUpoq58APyEsZVIoqLNefPrAHQuUpb1Z2+/DgDf0+CW5ZA0lRwA9FGtyT2apvMP2UUTBwBwAyi0IXUvRhG4ywDcTj2tA+QAMVtXICPnFCg/IbmZNtH/OgAzzMhAHXywVx+AFWr1HjDXgv6sfwF4Rvc6dg4D8QAAAABJRU5ErkJggg=="/>
+        </button>
+    </section>
+
+    <section id = "body">
+
+        <h2 id = "services"> Our Services </h2>
+
+        <div id = "one">
+            <img src="1.jpeg" alt="">
+            <div id = "text">
+                <h3>One-of-a Kind Luxury</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit 
+                    sit est at reprehenderit voluptatibus provident omnis porro totam excepturi 
+                    architecto facere rem laborum, dicta ut, ratione cupiditate, suscipit enim odit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit 
+                    sit est at reprehenderit voluptatibus provident omnis porro totam excepturi 
+                    architecto facere rem laborum, dicta ut, ratione cupiditate, suscipit enim odit.</p>
+            </div>
+            
+        </div>
+
+
+        <div id = "two">
+            
+            <div id = "text">
+                <h3>Endless Customization</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est accusantium error at fugiat. Ea, ipsum eos reprehenderit deserunt doloremque odit, dolor tempore corrupti fugit quidem dolorum, ipsam labore odio!
+                Maxime, porro veniam ullam doloremque aliquid expedita quos voluptatum at facilis accusantium sequi dicta rerum! Veniam cupiditate ipsam, distinctio nesciunt dolor, sunt reiciendis harum ex rem, omnis dolorum deleniti facere.</p>
+            </div>
+            <img src="2.jpeg" alt="">
+            
+        </div>
+
+
+        <div id = "three">
+            <img src="3.jpeg" alt="">
+            <div id = "text">
+                <h3>Premium Craftsmanship</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit 
+                    sit est at reprehenderit voluptatibus provident omnis porro totam excepturi 
+                    architecto facere rem laborum, dicta ut, ratione cupiditate, suscipit enim odit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit 
+                    sit est at reprehenderit voluptatibus provident omnis porro totam excepturi 
+                    architecto facere rem laborum, dicta ut, ratione cupiditate, suscipit enim odit.</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 id="queries"> Common Queries </h2>
+        <div id = "q">
+            <span> Q &#x29 What material do we use?</span>
+            <p> -> We use high quality 100% pure cotton for all our products.</p>
+        </div>
+
+        <div id = "q">
+            <span> Q &#x29 Can I request specific engravings?</span>
+            <p> -> We use high quality 100% pure cotton for all our products.</p>
+        </div>
+
+        <div id = "q">
+            <span> Q &#x29 How long does it take to ship?</span>
+            <p> -> We use high quality 100% pure cotton for all our products.</p>
+        </div>
+
+
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
